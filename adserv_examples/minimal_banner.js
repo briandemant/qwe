@@ -1,4 +1,5 @@
 var clickTag = document.location.search.replace(/^.*clickTAG=(.*)$/, '$1');
+console.log('clickTag',clickTag);
 
 function createLink(text, url) {
 	var linkNode = document.createElement('a');
