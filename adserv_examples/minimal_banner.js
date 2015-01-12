@@ -1,6 +1,9 @@
-console.log(document.getElementsByTagName('script'));
+var scripts = document.getElementsByTagName('script');
+console.log(scripts[scripts.length-1]);
+console.log(scripts[scripts.length-1].replace(/^.*clickTAG=(.*)$/, '$1'));
 
-var clickTag = document.scripts[document.scripts.length - 1].replace(/^.*clickTAG=(.*)$/, '$1');
+
+var clickTag = scripts[scripts.length-1].replace(/^.*clickTAG=(.*)$/, '$1');
 console.log('clickTag', clickTag);
 
 function createLink(text, url) {
