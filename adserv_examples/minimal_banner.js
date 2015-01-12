@@ -1,10 +1,10 @@
-var clickTag = document.location.search.replace(/^.*clickTAG=(.*)$/, '$1');
-console.log('clickTag',clickTag);
+var clickTag = document.scripts[document.scripts.length - 1].replace(/^.*clickTAG=(.*)$/, '$1');
+console.log('clickTag', clickTag);
 
 function createLink(text, url) {
 	var linkNode = document.createElement('a');
 	linkNode.setAttribute('href', clickTag + url);
-	var textNode = document.createTextNode(text +' ');
+	var textNode = document.createTextNode(text + ' ');
 	linkNode.appendChild(textNode)
 	return linkNode;
 }
