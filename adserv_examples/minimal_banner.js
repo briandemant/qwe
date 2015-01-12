@@ -1,3 +1,5 @@
+console.log(document.getElementsByTagName('script'));
+
 var clickTag = document.scripts[document.scripts.length - 1].replace(/^.*clickTAG=(.*)$/, '$1');
 console.log('clickTag', clickTag);
 
