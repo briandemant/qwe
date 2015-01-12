@@ -4,7 +4,7 @@ console.log('clickTag',clickTag);
 function createLink(text, url) {
 	var linkNode = document.createElement('a');
 	linkNode.setAttribute('href', clickTag + url);
-	var textNode = document.createTextNode(text);
+	var textNode = document.createTextNode(text +' ');
 	linkNode.appendChild(textNode)
 	return linkNode;
 }
